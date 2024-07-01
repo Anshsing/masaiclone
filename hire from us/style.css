@@ -1,0 +1,445 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header code starts */
+header {
+    font-family: sans-serif;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    font-size: 0.9rem;
+    font-weight: 550;
+    color: black;
+}
+
+header img {
+    height: 80%;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: all ease 0.2s;
+}
+
+a:hover {
+    color: rgb(255, 0, 43);
+}
+
+.clicked {
+    color: rgb(255, 0, 43);
+}
+
+#sign {
+    display: flex;
+    width: 20vw;
+    max-width: 150px;
+    height: 55%;
+    border: 1px solid rgb(255, 0, 43);
+    text-align: center;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 0, 43);
+}
+
+#sign:hover {
+    background-color: #FEDFE5;
+}
+
+#ref {
+    display: flex;
+    width: auto;
+    padding: 0 1vw;
+    height: 55%;
+    border: none;
+    background-color: #e9f9fc;
+    text-align: center;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    color: #6E71CC;
+}
+
+/* end of header code */
+
+/* Main css */
+
+#topper {
+    min-height: 120vh;
+    display: flex;
+    background-image: url("https://www.masaischool.com/images/hire-masai-graduates/hire-banner.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 20vh;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+#lefttop {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#first {
+    width: 100vw;
+    padding-top: 50px;
+}
+
+#first>h5 {
+    font-size: 3em;
+    padding: 0 0 0 10%;
+    font-weight: 750;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+#quick {
+    color: #CC926E;
+    padding: 0;
+}
+
+#lists {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 25px 10%;
+}
+
+ol>h2 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 13px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 17%;
+    align-self: center;
+    justify-self: center;
+}
+
+ol {
+    margin: 10vh 2vw;
+    width: 25vw;
+    height: 50vh;
+    list-style: none;
+    background-color: #5D8DE9;
+    margin-top: 0;
+    border-radius: 13px;
+    display: flexbox;
+    align-items: center;
+}
+
+li {
+    counter-increment: my-awesome-counter;
+    height: 16%;
+    font-family: Open Sans;
+    font-size: 1.2em;
+    border-bottom: #FFFFFF solid 1px;
+}
+
+li::before {
+    content: counter(my-awesome-counter);
+    width: 2rem;
+    height: 1.7rem;
+    background-color: #FFFFFF;
+    display: inline-block;
+    line-height: 2rem;
+    color: rgb(67, 88, 246);
+    text-align: center;
+    margin-right: 0.5rem;
+    font-family: Open Sans;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 1.2em;
+    justify-self: center;
+    align-self: center;
+}
+
+#form {
+    height: 80vh;
+    width: 30vw;
+    background-color: #FFFFFF;
+    margin: 10vh 2%;
+    padding-left: 2.5vw;
+    padding-top: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px gray;
+}
+
+input::placeholder {
+    font-family: sans-serif;
+    color: rgb(184, 183, 183);
+    font-size: medium;
+}
+
+form>label {
+    font-family: Open Sans;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+#form>h1 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+form>input {
+    margin: 10px 0px;
+    border: 0;
+    height: 7vh;
+    width: 90%;
+    border: 1pt rgb(184, 183, 183) solid;
+    border-radius: 5px;
+    padding-left: 2%;
+}
+
+#tutu {
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #ED0331;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+#middle {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    overflow: hidden;
+}
+
+#videoslider {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+#videoslider>img {
+    width: 80vw;
+    height: auto;
+    max-width: 500px;
+}
+
+#videoslider>button {
+    border-radius: 50%;
+    border: none;
+    height: 8vh;
+    width: 8vh;
+    font-size: large;
+}
+
+#middle>h5 {
+    font-family: Open Sans;
+    font-size: 2.5em;
+}
+
+#partners {
+    display: flex;
+}
+
+#tag {
+    display: flex;
+}
+
+#comments {
+    width: 80vw;
+    max-width: 600px;
+}
+
+#comments>h3 {
+    font-family: Open Sans;
+    font-size: 1.3em;
+    padding-bottom: 2vh;
+}
+
+#commentcard {
+    width: 100%;
+    max-width: 600px;
+    font-family: Open Sans;
+    box-shadow: 0 0 8px 1px lightgray;
+    border-radius: 10px;
+    padding-left: 2vw;
+}
+
+#commentcard>p {
+    font-size: 0.9em;
+}
+
+#tag {
+    padding-top: 1vh;
+}
+
+#tag>img {
+    height: 6vh;
+    border-radius: 3px;
+    width: auto;
+}
+
+#taginfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+#taginfo>h6 {
+    font-size: 1.1em;
+}
+
+#taginfo>p {
+    font-size: 0.8em;
+}
+
+#hiringbtn {
+    width: 80vw;
+    max-width: 300px;
+    height: 5vh;
+    border: solid 1px #ED0331;
+    color: #ED0331;
+    border-radius: 5px;
+    align-self: center;
+}
+
+#hiringbtn:hover {
+    background-color: rgb(255, 210, 217);
+}
+
+#hiring {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#hiringcards {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #F7F7FF;
+    border-radius: 10px;
+}
+
+#hiring>h5 {
+    font-size: 2.5em;
+    text-align: center;
+    font-family: Open Sans;
+    padding-bottom: 4vh;
+}
+
+#cards {
+    width: 20vw;
+    max-width: 200px;
+    height: 10vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 0.7em;
+}
+
+#span {
+    color: #6E71CC;
+}
+
+#bottom {
+    width: 100vw;
+    height: 100vh;
+}
+
+#testimonial {
+    width: 100%;
+    height: 100%;
+}
+
+#testimonial>h3 {
+    font-family: Open Sans;
+    font-size: 1.3em;
+    padding-bottom: 2vh;
+}
+
+#test1 {
+    width: 80vw;
+    max-width: 600px;
+    height: 40vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8RUbHWSxpNkFiacR1impryfoC0wEZmhfefg&s);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#test1:hover {
+    background-image: url(https://codeconvey.com/wp-content/uploads/2023/01/scrollbar-hide-css.jpg);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #first>h5 {
+        font-size: 2em;
+        padding: 0 10%;
+    }
+
+    #lists {
+        flex-direction: column;
+        margin: 25px 10%;
+    }
+
+    ol {
+        width: 80%;
+        height: auto;
+    }
+
+    #form {
+        width: 80vw;
+        margin: 10vh 10%;
+    }
+
+    #videoslider>img {
+        width: 90vw;
+    }
+
+    #hiringbtn {
+        width: 90vw;
+    }
+
+    #cards {
+        width: 40vw;
+        height: auto;
+    }
+
+    #comments {
+        width: 90vw;
+    }
+
+    #test1 {
+        width: 90vw;
+    }
+}
+
+iframe {
+    width: 100vw;
+    height: 80vh;
+  }
